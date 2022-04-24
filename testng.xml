@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="false">
+<listeners>
+<listener class-name="com.qa.listeners.testListener"/>
+</listeners>
+ <!-- <test name="Test Android" preserve-order="true">
+    <parameter name="emulator" value="false"/>
+    <parameter name="deviceName" value="Galaxy S21 5G"/>
+ 	<parameter name="platformVersion" value="12"/>
+ 	<parameter name="udid" value="R3CRB0F3XBD"/>
+ 	        <classes>
+        	<class name="com.qa.tests.SlidingMenuTests"/>
+        	<class name="com.qa.tests.DashboardTests"/>
+        	<class name="com.qa.tests.SettingsTests"/>
+        </classes>-->
+ 	 <test name="Test iOS" preserve-order="true">
+ 	<parameter name="deviceName" value="iPhone11"/>
+ 	<parameter name="platformVersion" value="15"/>
+ 	<parameter name="udid" value="1887F211-C607-4A98-9EC6-7D8751A2F512"/>
+        <classes>
+        	<class name="com.qa.tests.SlidingMenuTests"/>
+        	<class name="com.qa.tests.IOSDashboardTests"/>
+        	<class name="com.qa.tests.IOSSettingsTests"/>
+        </classes>
+    </test>
+    
+    
+</suite>
